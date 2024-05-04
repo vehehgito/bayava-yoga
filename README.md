@@ -1,1 +1,1 @@
-# bayava-yoga
+# Bayava Yoga
