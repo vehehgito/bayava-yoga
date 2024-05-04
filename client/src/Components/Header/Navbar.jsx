@@ -14,12 +14,12 @@ function Navbar() {
         <div>
             <ul className='flex items-center justify-between gap-5'>
                 <li>
-                    <Link to="/">
+                    <Link to="/schedule">
                         Schedule
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/courses">
                         Courses
                     </Link>
                 </li>
@@ -34,7 +34,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/">
+                    <Link to="/login">
                         Login
                     </Link>
                 </li>
