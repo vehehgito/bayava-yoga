@@ -18,7 +18,7 @@ function Navbar() {
 				</h1>
 			</div>
 			<div>
-				<ul className="flex items-center justify-between gap-5">
+				<ul className="flex items-center justify-between gap-5 font-crimson-pro text-xl font-medium">
 					<li>
 						<Link to="/schedule">Schedule</Link>
 					</li>
@@ -54,10 +54,10 @@ function Navbar() {
 				</ul>
 			</div>
 			<div className="flex items-center justify-between gap-5">
-				<button className="bg-yellow-500 text-white px-5 py-2 rounded-md">
+				<button className="bg-yellow-500 hover:bg-yellow-700 text-white px-5 py-2 rounded-md font-crimson-pro text-xl">
 					<Link to="/">Get Started</Link>
 				</button>
-				<select className="bg-gray-100 border px-5 py-2 rounded-md focus:ring-0">
+				<select className="bg-gray-100 border px-5 py-2 rounded-md focus:ring-0 font-open-sans ">
 					<option>English</option>
 					<option>Hindi</option>
 					<option>Russian</option>
