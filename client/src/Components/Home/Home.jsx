@@ -1,9 +1,13 @@
 import React from "react";
+import Hero from "./Hero";
 
 function Home() {
 	return (
-		<div className="h-screen flex justify-center items-center">
-			<h1 className="text-6xl">Home</h1>
+		<div className="">
+			{/* <h1 className="text-6xl">Home</h1> */}
+			<div>
+				<Hero />
+			</div>
 		</div>
 	);
 }

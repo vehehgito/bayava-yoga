@@ -11,14 +11,14 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="fixed top-0 left-0 z-100 w-full h-20 flex items-center justify-between px-40 bg-slate-100 drop-shadow-lg">
+		<nav className="fixed top-0 left-0 z-50 w-full h-20 flex items-center justify-between px-40 bg-white drop-shadow-lg">
 			<div>
-				<h1 className="text-3xl font-bold">
+				<h1 className="text-4xl font-bold">
 					<Link to="/">Bayava Yoga</Link>
 				</h1>
 			</div>
 			<div>
-				<ul className="flex items-center justify-between gap-5 font-crimson-pro text-xl font-medium">
+				<ul className="flex items-center justify-between gap-5 font-open-sans text-base font-medium">
 					<li>
 						<Link to="/schedule">Schedule</Link>
 					</li>
@@ -54,10 +54,10 @@ function Navbar() {
 				</ul>
 			</div>
 			<div className="flex items-center justify-between gap-5">
-				<button className="bg-yellow-500 hover:bg-yellow-700 text-white px-5 py-2 rounded-md font-crimson-pro text-xl">
-					<Link to="/">Get Started</Link>
+				<button className="bg-yellow hover:bg-yellow/60 text-white px-5 py-2 rounded-md font-open-sans font-semibold text-xl">
+					<Link to="/signup">Get Started</Link>
 				</button>
-				<select className="bg-gray-100 border px-5 py-2 rounded-md focus:ring-0 font-open-sans ">
+				<select className="bg-gray border px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 					<option>English</option>
 					<option>Hindi</option>
 					<option>Russian</option>
