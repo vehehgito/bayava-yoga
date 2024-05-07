@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import Benefits from "./Benefits";
 import ResponsiveBenefits from "./ResponsiveBenefits";
+import Features from "./Features"
 
 function Home() {
 	return (
@@ -10,7 +11,10 @@ function Home() {
 			<div>
 				<Hero />
 			</div>
-			<div className="max-[933px]:hidden flex">
+			<div>
+				<Features />
+			</div>
+			<div>
 				<Benefits />
 			</div>
 			<div className="min-[933px]:hidden flex">
