@@ -4,25 +4,25 @@ function ResponsiveBenefits() {
 
     const benefitsContent = [
         {
-            id: 1,
+            id: "01",
             title: "Benefit 1",
             description:
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit",
         },
         {
-            id: 2,
+            id: "02",
             title: "Benefit 2",
             description:
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit",
         },
         {
-            id: 3,
+            id: "03",
             title: "Benefit 3",
             description:
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit",
         },
         {
-            id: 4,
+            id: "04",
             title: "Benefit 4",
             description:
 				"Lorem ipsum dolor sit amet consectetur adipisicing elit",
