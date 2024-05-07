@@ -14,7 +14,7 @@ function Home() {
 			<div>
 				<Features />
 			</div>
-			<div>
+			<div className="max-[933px]:hidden flex">
 				<Benefits />
 			</div>
 			<div className="min-[933px]:hidden flex">
