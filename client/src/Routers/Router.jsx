@@ -8,6 +8,7 @@ import Schedule from '../Components/Schedule/Schedule'
 import Courses from '../Components/Courses/Courses'
 import Login from '../Components/Login/Login'
 import Signup from '../Components/Signup/Signup'
+import Footer from '../Components/Footer/Footer'
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
         </Routes>
+        <Footer />
     </div>
   )
 }

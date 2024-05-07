@@ -14,6 +14,7 @@ export default {
 			black: "#000000",
 			slate: "#64748b",
 			yellow: "#EDAA38",
+			"light-yellow": "#F3CB87",
 			gray: "#6b7280",
 			white: "#ffffff",
 			purple: "#3f3cbb",
