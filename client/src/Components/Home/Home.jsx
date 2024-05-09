@@ -6,6 +6,7 @@ import Features from "./Features"
 import HowItWorks from "./HowItWorks";
 import CallToAction from "./CallToAction";
 import NewsLetter from "./NewsLetter";
+import OurServices from "./OurServices";
 
 function Home() {
 	return (
@@ -24,6 +25,9 @@ function Home() {
 			</div>
 			<div>
 				<HowItWorks />
+			</div>
+			<div>
+				<OurServices />
 			</div>
 			<div>
 				<CallToAction />
