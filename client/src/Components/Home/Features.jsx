@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ImageCard from "./ImageCard";
+import YellowButton from "../Reusables/YellowButton";
 
 function Features() {
 	const featureContent = [
@@ -49,9 +50,9 @@ function Features() {
 			</div>
 
 			<div className="flex justify-center items-center p-10">
-				<button className="bg-yellow hover:bg-yellow/60 text-white px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
-					<Link to="/">More About Features</Link>
-				</button>
+					<Link to="/">
+						<YellowButton text="More about Features" />
+					</Link>
 			</div>
 		</div>
 	);

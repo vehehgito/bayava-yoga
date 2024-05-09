@@ -3,11 +3,14 @@ import Hero from "./Hero";
 import Benefits from "./Benefits";
 import ResponsiveBenefits from "./ResponsiveBenefits";
 import Features from "./Features"
+import HowItWorks from "./HowItWorks";
+import CallToAction from "./CallToAction";
+import NewsLetter from "./NewsLetter";
+import OurServices from "./OurServices";
 
 function Home() {
 	return (
 		<div className="">
-			{/* <h1 className="text-6xl">Home</h1> */}
 			<div>
 				<Hero />
 			</div>
@@ -19,6 +22,18 @@ function Home() {
 			</div>
 			<div className="min-[933px]:hidden flex">
 				<ResponsiveBenefits />
+			</div>
+			<div>
+				<HowItWorks />
+			</div>
+			<div>
+				<OurServices />
+			</div>
+			<div>
+				<CallToAction />
+			</div>
+			<div>
+				<NewsLetter />
 			</div>
 		</div>
 	);

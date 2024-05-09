@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AboutMenu from "./AboutMenu";
+import YellowButton from "../Reusables/YellowButton";
 
 function Navbar() {
 	const [aboutMenu, setAboutMenu] = useState(false);
@@ -146,9 +147,9 @@ function Navbar() {
 						</li>
 					</ul>
 					<div className="md:hidden flex items-center justify-between gap-5">
-						<button className="bg-yellow hover:bg-yellow/60 text-white px-5 py-2 rounded-md font-open-sans font-semibold text-xl">
-							<Link to="/signup">Get Started</Link>
-						</button>
+							<Link to="/signup">
+								<YellowButton text="Get Started" />
+							</Link>
 						<select className="bg-gray border px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 							<option>English</option>
 							<option>Hindi</option>
