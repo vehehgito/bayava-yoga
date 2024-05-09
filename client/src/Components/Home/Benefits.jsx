@@ -1,4 +1,5 @@
 import React from "react";
+import WhiteButton from "../Reusables/WhiteButton";
 
 function Benefits() {
 	return (
@@ -61,9 +62,7 @@ function Benefits() {
 					</p>
 					<div className="flex justify-end">
 						<>
-							<button className="bg-white text-yellow hover:opacity-70 px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
-								Learn More
-							</button>
+						<WhiteButton text="Learn More" />
 						</>
 					</div>
 				</div>

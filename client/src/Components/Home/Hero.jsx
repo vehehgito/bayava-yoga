@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import YellowButton from "../Reusables/YellowButton";
 
 function Hero() {
 	return (
@@ -24,7 +25,7 @@ function Hero() {
                     </p>
                     <div>
                         <Link to="/signup" className="">
-                            <button className="bg-yellow hover:opacity-70 text-white px-5 py-2 rounded-md font-open-sans font-medium md:text-xl text-sm">Get Started</button>
+                            <YellowButton text="Get Started" />
                         </Link>
                     </div>
                 </div>
