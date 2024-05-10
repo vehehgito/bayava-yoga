@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd client && pnpm start",
     "backend": "cd server && pnpm start",
-    "frontDev": "cd client && pnpm run dev",
-    "backDev": "cd server && pnpm run dev",
+    "frontDev": "cd client && pnpm dev",
+    "backDev": "cd server && pnpm dev",
     "start": "concurrently \"pnpm run backend\" \"pnpm run frontend\"",
     "dev": "concurrently \"pnpm run backDev\" \"pnpm run frontDev\""
   },
