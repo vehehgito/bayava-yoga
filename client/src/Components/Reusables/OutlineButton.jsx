@@ -7,7 +7,7 @@ function OutlineButton(props) {
 
   return (
     <div>
-        <button onClick={onclick} className='bg-transparent hover:bg-white text-white font-semibold hover:text-light-blue py-2 px-4 border border-white hover:border-transparent rounded-full'>
+        <button onClick={onclick} className='sm:text-5xl min-[933px]:text-3xl text-sm bg-transparent hover:bg-white text-white font-semibold hover:text-light-blue p-4 border border-white hover:border-transparent rounded-md'>
             {text}
         </button>
     </div>

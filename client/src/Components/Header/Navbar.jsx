@@ -32,7 +32,7 @@ function Navbar() {
 						<Link to="/courses">Courses</Link>
 					</li>
 					<li>
-						<Link to="/">Shop</Link>
+						<Link to="http://localhost:3001">Shop</Link>
 					</li>
 					<li>
 						<div className="about inline-block relative">
