@@ -26,7 +26,7 @@ function HowItWorks() {
 	return (
 		<div className="min-h-screen w-full flex flex-col items-center justify-center gap-10 py-7">
 			<div className="flex items-center justify-center w-full">
-				<h1 className="min-[933px]:text-7xl text-4xl font-crimson text-center">How It Works</h1>
+				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase font-crimson text-center">How It Works</h1>
 			</div>
 			<div className="flex items-center justify-between gap-5 min-[933px]:flex-row flex-col">
 				<div className="flex flex-col items-center gap-10">

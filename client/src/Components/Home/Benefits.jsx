@@ -3,7 +3,7 @@ import WhiteButton from "../Reusables/WhiteButton";
 
 function Benefits() {
 	return (
-		<div className="min-h-screen flex items-center justify-between gap-5 px-40 bg-peach">
+		<div className="min-h-screen flex items-center justify-between gap-5 px-40 bg-smoke-yellow">
 			<div className="grid grid-cols-2 gap-0">
 				<div className="p-10 w-full bg-white rounded-tl-xl border-r border-b flex flex-col gap-8 drop-shadow-md">
 					<div className="">
@@ -49,8 +49,8 @@ function Benefits() {
                         Benefits of <span className="text-7xl">Yoga</span>
                     </h1>
 				</div>
-				<div className="flex flex-col justify-between p-5 bg-yellow rounded-xl gap-4 drop-shadow-lg">
-					<p className="text-white">
+				<div className="flex flex-col justify-between p-5 bg-smoke-brown rounded-xl gap-4 drop-shadow-lg">
+					<p className="text-smoke-yellow">
 						<div>
 							Our programs are designed to help you achieve your
 							goals.

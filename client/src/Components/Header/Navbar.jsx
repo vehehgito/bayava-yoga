@@ -58,10 +58,10 @@ function Navbar() {
 				</ul>
 			</div>
 			<div className="min-[788px]:flex hidden items-center justify-between gap-5">
-				<button className="bg-yellow hover:bg-yellow/60 text-white px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
-					<Link to="/signup">Get Started</Link>
-				</button>
-				<select className="bg-gray border min-[920px]:px-5 px-2 py-2 rounded-md focus:ring-0 font-open-sans text-white">
+				<Link to="/signup">
+					<YellowButton text="Get Started" />
+				</Link>
+				<select className="bg-smoke-brown border min-[920px]:px-5 px-2 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 					<option>English</option>
 					<option>Hindi</option>
 					<option>Russian</option>
@@ -150,7 +150,7 @@ function Navbar() {
 							<Link to="/signup">
 								<YellowButton text="Get Started" />
 							</Link>
-						<select className="bg-gray border px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
+						<select className="bg-smoke-brown border px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 							<option>English</option>
 							<option>Hindi</option>
 							<option>Russian</option>
