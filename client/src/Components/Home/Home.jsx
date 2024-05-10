@@ -7,6 +7,8 @@ import HowItWorks from "./HowItWorks";
 import CallToAction from "./CallToAction";
 import NewsLetter from "./NewsLetter";
 import OurServices from "./OurServices";
+import Statistics from "./Statistics";
+import Reviews from "./Reviews";
 
 function Home() {
 	return (
@@ -28,6 +30,12 @@ function Home() {
 			</div>
 			<div>
 				<OurServices />
+			</div>
+			<div>
+				<Statistics />
+			</div>
+			<div>
+				<Reviews />
 			</div>
 			<div>
 				<CallToAction />

@@ -1,4 +1,5 @@
 import React from "react";
+import WhiteButton from "../Reusables/WhiteButton";
 
 function ResponsiveBenefits() {
 
@@ -29,7 +30,7 @@ function ResponsiveBenefits() {
         },
     ]
 	return (
-		<div className="min-h-screen w-full flex flex-col items-center justify-center gap-5 p-10 bg-light-yellow">
+		<div className="min-h-screen w-full flex flex-col items-center justify-center gap-5 p-10 bg-smoke-yellow">
 			<div className="flex flex-col justify-between ">
 				<div className="uppercase flex flex-col justify-between py-2">
 					<h4 className="text-xl font-crimson-pro text-slate">
@@ -58,8 +59,8 @@ function ResponsiveBenefits() {
                     })
                 }
 			</div>
-			<div className="flex flex-col justify-between p-5 bg-yellow rounded-xl gap-4 drop-shadow-lg">
-				<p className="text-white">
+			<div className="flex flex-col justify-between p-5 bg-smoke-brown rounded-xl gap-4 drop-shadow-lg">
+				<p className="text-smoke-yellow">
 					<div>
 						Our programs are designed to help you achieve your
 						goals.
@@ -69,11 +70,7 @@ function ResponsiveBenefits() {
 					</div>
 				</p>
 				<div className="flex justify-end">
-					<>
-						<button className="bg-white text-yellow hover:opacity-70 px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
-							Learn More
-						</button>
-					</>
+					<WhiteButton text="Learn More" />
 				</div>
 			</div>
 		</div>

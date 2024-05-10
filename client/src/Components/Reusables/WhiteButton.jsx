@@ -8,7 +8,7 @@ function WhiteButton(props) {
 
 	return (
 		<div>
-			<button onClick={onclick} className="bg-white text-yellow hover:opacity-70 px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
+			<button onClick={onclick} className="bg-white text-smoke-brown hover:opacity-70 px-5 py-2 rounded-md font-open-sans font-semibold min-[920px]:text-xl">
 				{text}
 			</button>
 		</div>

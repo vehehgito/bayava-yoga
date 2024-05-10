@@ -11,11 +11,11 @@ function Hero() {
                 <div className="absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 flex flex-col gap-5 max-[375px]:m-12 max-[478px]:m-8 max-[575px]:m-7">
                     <div className="font-crimson uppercase">
                         <h1 className="md:text-5xl text-4xl text-white font-bold w-26 shadow-peach">Making Life a</h1>
-                        <span className="md:text-7xl text-5xl text-peach font-bold shadow-white">
+                        <span className="md:text-7xl text-5xl text-smoke-yellow font-bold shadow-smoke-yellow drop-shadow-md">
                             Celebration
                         </span>
                     </div>
-                    <p className="text-white font-light md:text-2xl text-sm sm:text-[0.6rem]">
+                    <p className="text-white font-light md:text-2xl text-sm sm:text-[1.5rem]">
                         <div>
                             Fostering well-being through breath,
                         </div>

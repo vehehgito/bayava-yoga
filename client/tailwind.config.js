@@ -8,6 +8,13 @@ export default {
 			"crimson-pro": ["Crimson Pro", "serif"],
 		},
 		colors: {
+			"smoke-yellow": "#e0d7c8",
+			"smoke-brown": "#463e38",
+			"soft-gray": '#e7e7e7',
+			"mid-gray": "#A6A6A6",
+			"solid-gray": "gray",
+			hoverOverBrown: "#db6435",
+			bayavaOrange: "#cc582a",
 			peach: "#F6DBC7",
 			transparent: "transparent",
 			current: "currentColor",

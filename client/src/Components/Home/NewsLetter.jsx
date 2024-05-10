@@ -1,26 +1,29 @@
 import React from "react";
-import OutlineButton from "../Reusables/OutlineButton";
 
 function NewsLetter() {
 	return (
-		<div className="min-h-1/2 bg-light-yellow flex min-[933px]:flex-row flex-col-reverse items-center justify-center w-full">
-			<div className="h-full w-1/2 p-20 rounded-r-md drop-shadow-md">
-				<form className="w-full font-crimson-pro flex items-center justify-center">
+		<div className="min-h-1/2 bg-smoke-yellow flex items-center justify-center w-full min-[933px]:flex-row flex-col-reverse px-10 py-20 gap-10">
+			<div className="h-full w-full md:p-20 p-2 rounded-r-md drop-shadow-md">
+				<form className="w-full font-crimson-pro flex items-center justify-center text-2xl">
 					<input
 						type="email"
 						placeholder="Enter your email address"
-						className="p-2 rounded-l-md"
+						className="md:p-5 p-2 rounded-l-md"
 					/>
-					<button className="bg-light-blue text-yellow p-2 rounded-r-md">
+					<button className="bg-smoke-brown text-smoke-yellow md:p-5 p-2 rounded-r-md">
 						Subscribe
 					</button>
 				</form>
 			</div>
-			<div className="h-full w-1/2 p-20 text-right flex flex-col items-center justify-center">
-				<h1 className="text-6xl font-bold text-center uppercase">
-					Subscribe to our Newsletter
+			<div className="h-full w-full text-right flex flex-col">
+				<h1 className="w-full sm:text-4xl md:text-6xl text-xl font-bold flex flex-col justify-center md:text-right text-center text-smoke-brown">
+					<div className="sm:text-2xl md:text-3xl text-xl text-mid-gray">
+						Subscribe to our{` `}
+					</div>
+					<span className="uppercase">
+						Newsletter for Updates
+					</span>
 				</h1>
-				<p>Get the latest news and updates from us.</p>
 			</div>
 		</div>
 	);
