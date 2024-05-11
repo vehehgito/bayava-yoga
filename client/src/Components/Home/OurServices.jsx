@@ -37,6 +37,11 @@ function OurServices() {
 			title: "Service 7",
 			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		},
+		{
+			id: 8,
+			title: "Service 8",
+			content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		},
 	];
 
 	return (
@@ -45,7 +50,7 @@ function OurServices() {
 				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase">Our Services</h1>
 			</div>
 			<div className="">
-				<div className="flex flex-wrap items-center justify-center gap-7 p-10">
+				<div className="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 items-center justify-center gap-7 p-10">
 					{serviceContent.map((service) => {
 						return (
 							<div
