@@ -33,7 +33,7 @@ function Features() {
 
 	return (
 		<div className="flex flex-col justify-center items-center gap-5">
-			<h1 className="text-6xl text-center py-10">Features</h1>
+			<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase py-10">Features</h1>
 
 			<div className="flex flex-wrap justify-evenly items-center gap-5 py-10">
 				{featureContent.map((item, index) => {

@@ -6,6 +6,7 @@ export default {
 			"open-sans": ["Open Sans", "sans-serif"],
 			crimson: ["Crimson Text", "serif"],
 			"crimson-pro": ["Crimson Pro", "serif"],
+			mono: ["Inconsolata", "monospace"],
 		},
 		colors: {
 			"smoke-yellow": "#e0d7c8",

@@ -9,6 +9,11 @@ import NewsLetter from "./NewsLetter";
 import OurServices from "./OurServices";
 import Statistics from "./Statistics";
 import Reviews from "./Reviews";
+import OurPrices from "./OurPrices";
+import Contact from "./Contact";
+import Courses from "./Courses";
+import Teachers from "./Teachers";
+import FAQs from "./FAQs";
 
 function Home() {
 	return (
@@ -29,19 +34,34 @@ function Home() {
 				<HowItWorks />
 			</div>
 			<div>
+				<Teachers />
+			</div>
+			<div>
 				<OurServices />
 			</div>
 			<div>
 				<Statistics />
 			</div>
 			<div>
+				<Courses />
+			</div>
+			<div>
 				<Reviews />
+			</div>
+			<div>
+				<OurPrices />
 			</div>
 			<div>
 				<CallToAction />
 			</div>
 			<div>
 				<NewsLetter />
+			</div>
+			<div>
+				<Contact />
+			</div>
+			<div>
+				<FAQs />
 			</div>
 		</div>
 	);
