@@ -40,7 +40,7 @@ function OurServices() {
 	];
 
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center gap-10">
+		<div className="min-h-screen flex flex-col items-center justify-between py-20 gap-10">
 			<div className="flex items-center">
 				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase">Our Services</h1>
 			</div>

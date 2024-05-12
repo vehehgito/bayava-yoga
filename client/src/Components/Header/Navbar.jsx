@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AboutMenu from "./AboutMenu";
 import YellowButton from "../Reusables/YellowButton";
+import BrownButton from "../Reusables/BrownButton";
 
 function Navbar() {
 	const [aboutMenu, setAboutMenu] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="fixed top-0 left-0 z-50 w-full h-20 flex items-center justify-between px-5 bg-white drop-shadow-lg min-[1200px]:px-40">
+		<nav className="fixed top-0 left-0 z-50 w-full h-20 flex items-center justify-between px-5 bg-smoke-yellow drop-shadow-lg min-[1200px]:px-40">
 			<div>
 				<h1 className="min-[920px]:text-4xl text-2xl font-bold">
 					<Link to="/">Bayava Yoga</Link>
@@ -59,9 +60,9 @@ function Navbar() {
 			</div>
 			<div className="min-[788px]:flex hidden items-center justify-between gap-5">
 				<Link to="/signup">
-					<YellowButton text="Get Started" />
+					<BrownButton text="Get Started" />
 				</Link>
-				<select className="bg-smoke-brown border min-[920px]:px-5 px-2 py-2 rounded-md focus:ring-0 font-open-sans text-white">
+				<select className="bg-smoke-yellow border border-smoke-brown min-[920px]:px-5 px-2 py-2 rounded-md outline-none focus:ring-0 font-open-sans text-smoke-brown">
 					<option>English</option>
 					<option>Hindi</option>
 					<option>Russian</option>
@@ -148,9 +149,9 @@ function Navbar() {
 					</ul>
 					<div className="md:hidden flex items-center justify-between gap-5">
 							<Link to="/signup">
-								<YellowButton text="Get Started" />
+								<BrownButton text="Get Started" />
 							</Link>
-						<select className="bg-smoke-brown border px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
+						<select className="bg-smoke-brown px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 							<option>English</option>
 							<option>Hindi</option>
 							<option>Russian</option>
