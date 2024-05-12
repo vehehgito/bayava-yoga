@@ -11,7 +11,7 @@ const port = process.env.PORT || 4000;
 // MIDDLEWARE
 const corsOptions = {
     credentials: true,
-    origin: 'http://localhost:3000',    
+    origin: '*'  
 };
 
 app.use(cors(corsOptions));
@@ -21,6 +21,18 @@ app.get("/", (req, res) => {
     res.status(200).json({msg: "Hello World"});
 });
 
+// GET Operation
+app.get("/get", async (req, res) => {
+    try {
+        const users = await poolDB.query("SELECT * FROM bayavasfdc.products__c");
+        res.status(200).json(users);
+    } 
+    catch (error) {
+        console.error(error.message)
+    } 
+});
+
+// LISTENER
 app.listen(port, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 });
