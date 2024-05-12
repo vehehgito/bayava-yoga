@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
 // GET Operation
 app.get("/get", async (req, res) => {
     try {
-        const users = await poolDB.query("SELECT * FROM bayavasfdc.products__c");
+        const users = await poolDB.query("SELECT * FROM bayavasfdc.course__c");
         res.status(200).json(users);
     } 
     catch (error) {
