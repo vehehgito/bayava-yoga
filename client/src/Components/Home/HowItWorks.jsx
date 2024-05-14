@@ -7,30 +7,30 @@ function HowItWorks() {
     const stepsContent = [
         {
             id: 1,
-            title: "Step 1",
+            title: "What is Yoga? Why do we need it in modern times?",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         },
         {
             id: 2,
-            title: "Step 2",
+            title: "Our Divine Vision",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         },
         {
             id: 3,
-            title: "Step 3",
+            title: "What is our Parampara? Why you should study at Brahmarishi Academy of Yoga and Ayurveda?",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit",
         }
     ]
 
 
 	return (
-		<div className="min-h-screen w-full flex flex-col items-center justify-center gap-10 py-7">
+		<div className="min-h-screen w-full flex flex-col items-center justify-center gap-10 py-7 md:px-12 px-0">
 			<div className="flex items-center justify-center w-full">
-				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase font-crimson text-center">How It Works</h1>
+				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase font-crimson text-center">Our Vision</h1>
 			</div>
-			<div className="flex items-center justify-between gap-5 min-[933px]:flex-row flex-col">
-				<div className="flex flex-col items-center gap-10">
-					<div className="flex flex-col items-center justify-center gap-5 p-4">
+			<div className="flex items-center justify-between min-[933px]:flex-row flex-col">
+				<div className="flex flex-col justify-between items-center gap-10">
+					<div className="flex flex-col items-center justify-center gap-5 py-4">
 						{
                             stepsContent.map((item, index) => {
                                 return (
