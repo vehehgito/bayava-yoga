@@ -62,8 +62,8 @@ function Teachers() {
 					They are dedicated to helping you learn and grow.
 				</p>
 				<div className="">
-					<Link to="/our-team" className="text-smoke-yellow">
-            <BrownButton text="Meet Our Team" />
+					<Link to="/our-teachers" className="text-smoke-yellow">
+            <BrownButton text="Meet Our Teachers" />
 					</Link>
 				</div>
 			</div>
