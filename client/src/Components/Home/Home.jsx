@@ -8,7 +8,7 @@ import NewsLetter from "./NewsLetter";
 import OurServices from "./OurServices";
 import Statistics from "./Statistics";
 import Reviews from "./Reviews";
-import OurPrices from "./OurPrices";
+import OurPrograms from "./OurPrograms";
 import Contact from "./Contact";
 import Courses from "./Courses";
 import Teachers from "./Teachers";
@@ -48,7 +48,7 @@ function Home() {
 				<Reviews />
 			</div>
 			<div>
-				<OurPrices />
+				<OurPrograms />
 			</div>
 			<div>
 				<CallToAction />
