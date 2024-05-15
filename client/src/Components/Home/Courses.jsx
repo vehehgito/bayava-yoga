@@ -6,7 +6,7 @@ function Courses() {
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-between py-44 md:gap-0 gap-5">
 			<div>
-				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase text-center">
+				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase text-center pb-10">
 					Our Upcoming Courses
 				</h1>
 			</div>
@@ -42,7 +42,7 @@ function Courses() {
           </div>
 				</div>
 			</div>
-      <div>
+      <div className="pt-10">
         <BrownButton text="View All Courses" />
       </div>
 		</div>
