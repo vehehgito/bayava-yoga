@@ -22,9 +22,20 @@ app.get("/", (req, res) => {
 });
 
 // GET Operation
-app.get("/get", async (req, res) => {
+app.get("/api/courses", async (req, res) => {
     try {
         const users = await poolDB.query("SELECT * FROM bayavasfdc.course__c");
+        res.status(200).json(users);
+    } 
+    catch (error) {
+        console.error(error.message)
+    } 
+});
+
+// GET Operation
+app.get("/api/teachers", async (req, res) => {
+    try {
+        const users = await poolDB.query("SELECT * FROM bayavasfdc.teacher__c");
         res.status(200).json(users);
     } 
     catch (error) {

@@ -1,81 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import SmallBrownOutlineButton from "../Reusables/SmallBrownOutlineButton";
 import { Link } from "react-router-dom";
 
 function OurTeachers() {
-	const teachers = [
-		{
-			id: 1,
-			name: "John Doe",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGZhY2V8ZW58MHx8MHx8fDA%3D",
-		},
-		{
-			id: 2,
-			name: "Will Smith",
-			specialisation: "Fitness Instructor",
-			image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBmYWNlfGVufDB8fDB8fHww",
-		},
-		{
-			id: 3,
-			name: "Carl Johnson",
-			specialisation: "Ayurveda Specialist",
-			image: "https://images.unsplash.com/photo-1516914943479-89db7d9ae7f2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZSUyMGZhY2V8ZW58MHwxfDB8fHww",
-		},
-		{
-			id: 4,
-			name: "Jane Doe",
-			specialisation: "Nutritionist",
-			image: "https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZSUyMGZhY2V8ZW58MHwxfDB8fHww",
-		},
-		{
-			id: 5,
-			name: "Jessica Moreno",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1601412436009-d964bd02edbc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZSUyMGZhY2V8ZW58MHwxfDB8fHww",
-		},
-		{
-			id: 6,
-			name: "Tyler Durden",
-			specialisation: "Fitness Instructor",
-			image: "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZSUyMGZhY2V8ZW58MHwxfDB8fHww",
-		},
-		{
-			id: 7,
-			name: "Karen Smith",
-			specialisation: "Nutritionist",
-			image: "https://images.unsplash.com/photo-1542458579-bc6f69b5ce6b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-		{
-			id: 8,
-			name: "Alfredo Garcia",
-			specialisation: "Ayurveda Specialist",
-			image: "https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-		{
-			id: 8,
-			name: "Gina Linetti",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-		{
-			id: 8,
-			name: "Gina Linetti",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-		{
-			id: 8,
-			name: "Gina Linetti",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-		{
-			id: 8,
-			name: "Gina Linetti",
-			specialisation: "Yoga Instructor",
-			image: "https://images.unsplash.com/photo-1611590027211-b954fd027b51?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBmYWNlfGVufDB8MXwwfHx8MA%3D%3D",
-		},
-	];
+	const [data, setData] = useState([]);
+
+	useEffect(() => {
+		axios
+			.get("http://localhost:8000/api/teachers")
+			.then((res) => {
+				setData(res.data.rows);
+			})
+			.catch((error) => console.error(error));
+	}, []);
 
 	return (
 		<div className="min-h-screen w-full flex items-center justify-between py-20 gap-10 flex-col">
@@ -101,14 +39,14 @@ function OurTeachers() {
 				</form>
 			</div>
 			<div className="w-full grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center justify-center gap-5">
-				{teachers.map((teacher) => {
+				{data.map((teacher) => {
 					return (
 						<div
 							key={teacher.id}
 							className="flex flex-col items-center justify-center gap-3"
 						>
 							<img
-								src={teacher.image}
+								src={teacher.cover_photo__c}
 								alt={teacher.name}
 								className="rounded-full md:w-48 md:h-48 w-28 h-28 aspect-square object-cover"
 							/>

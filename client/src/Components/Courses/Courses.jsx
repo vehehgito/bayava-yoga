@@ -7,7 +7,7 @@ function Courses() {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8000/get")
+			.get("http://localhost:8000/api/courses")
 			.then((res) => {
 				setData(res.data.rows);
 			})
