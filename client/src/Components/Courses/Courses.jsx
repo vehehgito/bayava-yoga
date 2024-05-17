@@ -7,7 +7,7 @@ function Courses() {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8000/api/courses")
+			.get(`${import.meta.env.VITE_API_URL}/api/courses`)
 			.then((res) => {
 				setData(res.data.rows);
 			})

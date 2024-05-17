@@ -7,11 +7,12 @@ const poolDB = require("./db");
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
+const client_url = process.env.CLIENT_URL;
 
 // MIDDLEWARE
 const corsOptions = {
     credentials: true,
-    origin: '*'  
+    origin: client_url,
 };
 
 app.use(cors(corsOptions));
