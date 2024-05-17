@@ -9,6 +9,7 @@ import Courses from '../Components/Courses/Courses'
 import Login from '../Components/Login/Login'
 import Signup from '../Components/Signup/Signup'
 import Footer from '../Components/Footer/Footer'
+import CoursePage from '../Components/Courses/CoursePage/CoursePage'
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
             <Route path='/about-academy' element={<AboutAcademy />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
+            <Route path='/courses/:courseId' element={<CoursePage />} />
         </Routes>
         <Footer />
     </div>
