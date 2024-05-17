@@ -8,7 +8,7 @@ function OurTeachers() {
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8000/api/teachers")
+			.get(`${import.meta.env.VITE_API_URL}/api/teachers`)
 			.then((res) => {
 				setData(res.data.rows);
 			})
