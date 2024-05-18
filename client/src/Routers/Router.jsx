@@ -25,7 +25,7 @@ function Router() {
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/courses/:courseId' element={<CoursePage />} />
-            <Route path='/teachers/:teacherID' element={<TeacherPage />} />
+            <Route path='/teachers/:teacherId' element={<TeacherPage />} />
         </Routes>
         <Footer />
     </div>
