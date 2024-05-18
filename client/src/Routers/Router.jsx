@@ -3,13 +3,14 @@ import Navbar from '../Components/Header/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../Components/Home/Home'
 import OurTeachers from '../Components/OurTeachers/OurTeachers'
+import TeacherPage from '../Components/OurTeachers/TeacherPage/TeacherPage'
 import AboutAcademy from '../Components/AboutAcademy/AboutAcademy'
 import Schedule from '../Components/Schedule/Schedule'
 import Courses from '../Components/Courses/Courses'
+import CoursePage from '../Components/Courses/CoursePage/CoursePage'
 import Login from '../Components/Login/Login'
 import Signup from '../Components/Signup/Signup'
 import Footer from '../Components/Footer/Footer'
-import CoursePage from '../Components/Courses/CoursePage/CoursePage'
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/courses/:courseId' element={<CoursePage />} />
+            <Route path='/teachers/:teacherID' element={<TeacherPage />} />
         </Routes>
         <Footer />
     </div>
