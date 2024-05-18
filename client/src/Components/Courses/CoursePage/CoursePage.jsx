@@ -9,7 +9,7 @@ function CoursePage() {
 
 	useEffect(() => {
 		axios
-			.get(`http://localhost:8000/api/courses/${courseId}`)
+			.get(`/api/courses/${courseId}`)
 			.then((res) => {
 				setCourse(res.data.rows[0]);
 			})
@@ -17,8 +17,6 @@ function CoursePage() {
 				console.log(err);
 			});
 	}, [courseId]);
-
-	// const course =
 
 	return (
 		<div className="min-h-screen flex flex-col items-center justify-center">
