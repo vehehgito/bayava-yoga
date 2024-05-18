@@ -50,7 +50,7 @@ function OurTeachers() {
 								className="rounded-full md:w-48 md:h-48 w-28 h-28 aspect-square object-cover"
 							/>
 
-							<Link to = {`/teacher/${teacher.id}`}>
+							<Link to = {`/teachers/${teacher.id}`}>
 							<h2 className="md:text-3xl text-xl font-crimson-pro">
 								{teacher.name}
 							</h2>
