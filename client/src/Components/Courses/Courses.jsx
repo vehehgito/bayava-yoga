@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SmallBrownOutlineButton from "../Reusables/SmallBrownOutlineButton";
+import { Link } from "react-router-dom";
 
 function Courses() {
 	const [data, setData] = useState([]);
@@ -70,15 +71,23 @@ function Courses() {
 										</div>
 									</div>
 									<div className="flex justify-between items-center gap-3">
-										<p>Starts : {course.start_date__c.slice(0, 10)}</p>
-										<p>Ends : {course.end_date__c.slice(0, 10)}</p>
+										<p>
+											Starts :{" "}
+											{course.start_date__c.slice(0, 10)}
+										</p>
+										<p>
+											Ends :{" "}
+											{course.end_date__c.slice(0, 10)}
+										</p>
 									</div>
 								</div>
 								<div className="px-6 py-4 flex items-center justify-between">
 									<h3 className="text-2xl text-gray-700 font-black">
 										{course.mode__c}
 									</h3>
-									<SmallBrownOutlineButton text="Enroll" />
+									<Link to={`/courses/${course.id}`}>
+										<SmallBrownOutlineButton text="Enroll" />
+									</Link>
 								</div>
 							</div>
 						</div>
