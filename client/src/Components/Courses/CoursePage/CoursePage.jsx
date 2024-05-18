@@ -19,12 +19,13 @@ function CoursePage() {
 	}, [courseId]);
 
 	return (
-		<div className="min-h-screen flex flex-col items-center justify-center">
-			<div>
+			<div className="pt-40">
 				{course ? (
-					<div>
-						<h1>{course.name}</h1>
-						<p>
+					<div className="flex flex-wrap p-10">
+						<h1 className="text-black font-bold text-7xl drop-shadow">
+							{course.name}
+						</h1>
+						<p className="text-xl">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Expedita maxime saepe amet et odio consectetur
 							atque, nobis quisquam alias harum cupiditate porro
@@ -37,7 +38,6 @@ function CoursePage() {
 					<p>Loading...</p>
 				)}
 			</div>
-		</div>
 	);
 }
 
