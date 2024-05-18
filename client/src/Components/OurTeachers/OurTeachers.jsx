@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import SmallBrownOutlineButton from "../Reusables/SmallBrownOutlineButton";
 import { Link } from "react-router-dom";
 
 function OurTeachers() {
@@ -8,7 +7,7 @@ function OurTeachers() {
 
 	useEffect(() => {
 		axios
-			.get(`${import.meta.env.VITE_API_URL}/api/teachers`)
+			.get("/api/teachers")
 			.then((res) => {
 				setData(res.data.rows);
 			})
@@ -50,9 +49,13 @@ function OurTeachers() {
 								alt={teacher.name}
 								className="rounded-full md:w-48 md:h-48 w-28 h-28 aspect-square object-cover"
 							/>
+
+							<Link to = {`/teacher/${teacher.id}`}>
 							<h2 className="md:text-3xl text-xl font-crimson-pro">
 								{teacher.name}
 							</h2>
+							</Link>
+
 							<h2 className="md:text-xl text-sm bg-smoke-brown flex items-center justify-center text-white rounded-md px-2">
 								{}
 							</h2>
