@@ -19,13 +19,16 @@ function CoursePage() {
 	}, [courseId]);
 
 	return (
-			<div className="pt-40">
+			<div className="p-10 pt-40 flex flex-wrap justify-center text-center content-center items-center">
 				{course ? (
-					<div className="flex flex-wrap p-10">
-						<h1 className="text-black font-bold text-7xl drop-shadow">
+					<div className="">
+						<h1 className="pb-5 text-black font-crimson text-6xl drop-shadow">
 							{course.name}
 						</h1>
-						<p className="text-xl">
+						<h2 className="pb-5 text-black font-crimnson text-3xl drop-shadow">
+						Category: {course.category__c}
+						</h2>
+						<p className="pb-5 text-black font-open-sans text-xl">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Expedita maxime saepe amet et odio consectetur
 							atque, nobis quisquam alias harum cupiditate porro
