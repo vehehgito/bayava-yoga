@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../public/DAYA-logo.svg"
 
 function Footer() {
 	// Find year
@@ -9,7 +10,7 @@ function Footer() {
 		<div className="bg-smoke-brown text-smoke-yellow mt-16 flex flex-col justify-between items-center w-full h-full bg-gray-400 md:rounded-tl-full rounded-t-3xl shadow-lg py-10 text-gray-50 gap-7 md:text-left text-center">
 			<div className="flex md:flex-row flex-col justify-between items-center w-full md:pl-48 px-10 gap-5">
 				<div className="flex flex-col gap-5">
-					<h1 className="lg:text-2xl md:text-xl xl:text-6xl text-3xl font-[700] text-gray-950">Bayava</h1>
+					<img src={logo} />
 					<p className="md:w-[10rem] w-full">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					</p>
