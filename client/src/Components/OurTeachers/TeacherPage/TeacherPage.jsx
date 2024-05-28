@@ -25,11 +25,7 @@ function TeacherPage() {
 					<div>
 						<h1>{teacher.name}</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Expedita maxime saepe amet et odio consectetur
-							atque, nobis quisquam alias harum cupiditate porro
-							fugit veritatis illum iste aspernatur dolore
-							reiciendis molestiae? 
+							{teacher.Long_About__c}
 						</p>
 						<img src={teacher.cover_photo__c} alt={teacher.name} />
 					</div>
