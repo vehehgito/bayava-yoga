@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 const EducationPrograms = () => {
 	const [activeTab, setActiveTab] = useState(0);
@@ -47,12 +47,11 @@ const EducationPrograms = () => {
                                     w-full md:text-center text-right
                                     md:py-2 py-3 md:px-4 px-6
                                     rounded-xl
-									text-smoke-brown
 									hover:bg-smoke-brown hover:text-light-yellow
                                     ${
 										activeTab === index
 											? "text-light-yellow bg-smoke-brown font-bold"
-											: ""
+											: "text-smoke-brown"
 									}
                                 `}
 									key={index}
