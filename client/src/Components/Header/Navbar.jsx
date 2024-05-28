@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AboutMenu from "./AboutMenu";
 import BrownButton from "../Reusables/BrownButton";
-import logo from "../../../public/DAYA-logo.svg"
+import logo from "/DAYA-logo.svg";
 
 function Navbar() {
 	const [aboutMenu, setAboutMenu] = useState(false);
@@ -22,7 +22,7 @@ function Navbar() {
 			<div className="">
 				<h1 className="min-[920px]:text-4xl text-2xl font-bold">
 					<Link className="" to="/">
-						<img 
+						<img
 							src={logo}
 							alt="Logo"
 							className="bg-smoke-brown rounded-full h-20 w-20"
@@ -37,6 +37,11 @@ function Navbar() {
 					</li>
 					<li>
 						<Link to="/courses">Courses</Link>
+					</li>
+					<li>
+						<Link to="/educational-programs">
+							Education Programs
+						</Link>
 					</li>
 					<li>
 						<Link to="http://localhost:3001">Shop</Link>
@@ -124,6 +129,11 @@ function Navbar() {
 							</Link>
 						</li>
 						<li>
+							<Link onClick={handleMenu} to="/educational-programs">
+								Education Programs
+							</Link>
+						</li>
+						<li>
 							<Link onClick={handleMenu} to="/">
 								Shop
 							</Link>
@@ -153,9 +163,9 @@ function Navbar() {
 						</li>
 					</ul>
 					<div className="md:hidden flex items-center justify-between gap-5">
-							<Link to="/signup">
-								<BrownButton text="Get Started" />
-							</Link>
+						<Link to="/signup">
+							<BrownButton text="Get Started" />
+						</Link>
 						<select className="bg-smoke-brown px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 							<option>English</option>
 							<option>Hindi</option>
