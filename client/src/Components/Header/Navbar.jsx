@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AboutMenu from "./AboutMenu";
 import BrownButton from "../Reusables/BrownButton";
+import logo from "../../../public/DAYA-logo.svg"
 
 function Navbar() {
 	const [aboutMenu, setAboutMenu] = useState(false);
@@ -18,9 +19,15 @@ function Navbar() {
 
 	return (
 		<nav className="fixed top-0 left-0 z-50 w-full h-20 flex items-center justify-between px-5 bg-smoke-yellow drop-shadow-lg min-[1200px]:px-40">
-			<div>
+			<div className="">
 				<h1 className="min-[920px]:text-4xl text-2xl font-bold">
-					<Link to="/">Bayava Yoga</Link>
+					<Link className="" to="/">
+						<img 
+							src={logo}
+							alt="Logo"
+							className="bg-smoke-brown rounded-full h-20 w-20"
+						/>
+					</Link>
 				</h1>
 			</div>
 			<div className="min-[788px]:flex hidden">
@@ -64,7 +71,6 @@ function Navbar() {
 				<select className="bg-smoke-yellow border border-smoke-brown min-[920px]:px-5 px-2 py-2 rounded-md outline-none focus:ring-0 font-open-sans text-smoke-brown">
 					<option>English</option>
 					<option>Hindi</option>
-					<option>Russian</option>
 				</select>
 			</div>
 
@@ -153,7 +159,6 @@ function Navbar() {
 						<select className="bg-smoke-brown px-5 py-2 rounded-md focus:ring-0 font-open-sans text-white">
 							<option>English</option>
 							<option>Hindi</option>
-							<option>Russian</option>
 						</select>
 					</div>
 				</div>
