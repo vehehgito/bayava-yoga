@@ -46,7 +46,7 @@ function Benefits() {
 				<div className="uppercase flex flex-col h-full justify-between py-24">
 					<h4 className="text-xl font-crimson-pro text-slate">Yoga is Fun!</h4>
 					<h1 className="text-3xl">
-                        Benefits of <span className="text-7xl">Yoga</span>
+                        Benefits of <div className="text-7xl">Yoga</div>
                     </h1>
 				</div>
 				<div className="flex flex-col justify-between p-5 bg-smoke-brown rounded-xl gap-4 drop-shadow-lg">
