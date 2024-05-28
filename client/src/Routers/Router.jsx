@@ -11,6 +11,7 @@ import CoursePage from '../Components/Courses/CoursePage/CoursePage'
 import Login from '../Components/Login/Login'
 import Signup from '../Components/Signup/Signup'
 import Footer from '../Components/Footer/Footer'
+import EducationPrograms from '../Components/EducationPrograms/EducationPrograms'
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path='/schedule' element={<Schedule />} />
+            <Route path='/educational-programs' element={<EducationPrograms />} />
             <Route path='/courses' element={<Courses />} />
             <Route path='/our-teachers' element={<OurTeachers />} />
             <Route path='/about-academy' element={<AboutAcademy />} />
