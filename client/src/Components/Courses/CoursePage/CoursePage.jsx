@@ -25,9 +25,12 @@ function CoursePage() {
 						<h1 className="pb-5 text-black font-crimson text-6xl drop-shadow">
 							{course.name}
 						</h1>
-						<h2 className="pb-5 text-black font-crimnson text-3xl drop-shadow">
+						<h2 className="pb-5 text-black font-crimson text-3xl drop-shadow">
 						Category: {course.category__c}
 						</h2>
+						<h3 className="pb-5 text-black font-crimson text-2xl drop-shadow">
+							Duration: {course.start_date__c.slice(0, 10)} to {course.end_date__c.slice(0, 10)}
+						</h3>
 						<p className="pb-5 text-black font-open-sans text-xl">
 							Lorem ipsum dolor sit amet consectetur adipisicing
 							elit. Expedita maxime saepe amet et odio consectetur
@@ -35,7 +38,10 @@ function CoursePage() {
 							fugit veritatis illum iste aspernatur dolore
 							reiciendis molestiae? 
 						</p>
-						<img src={course.cover_photo__c} alt={course.name} />
+						<img src={course.cover_photo__c} alt={course.name} className="pb-5"/>
+						<h3 className="text-black font-crimson text-2xl drop-shadow">
+							Price: ${course.price__c}
+						</h3>
 					</div>
 				) : (
 					<p>Loading...</p>
