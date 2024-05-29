@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 
 const EducationPrograms = () => {
 	const [activeTab, setActiveTab] = useState(0);
@@ -9,41 +9,26 @@ const EducationPrograms = () => {
 
 	const tabContent = [
 		{
-			title: "Yoga",
+			title: "Yoga Sadhaka",
 			content:
 				"Our yoga program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
 		},
 		{
-			title: "Meditation",
+			title: "Yoga Shikshaka",
 			content:
-				"Our meditation program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
+				"Our yoga program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
 		},
 		{
-			title: "Nutrition",
+			title: "Yoga Chiktshak",
 			content:
-				"Our nutrition program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
-		},
-		{
-			title: "Mindfulness",
-			content:
-				"Our mindfulness program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
-		},
-		{
-			title: "Wellness",
-			content:
-				"Our wellness program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
-		},
-		{
-			title: "Fitness",
-			content:
-				"Our fitness program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
+				"Our yoga program is designed to help you better your lifestyle. We offer a variety of classes for all levels.",
 		},
 	];
 
 	return (
 		<div className="min-h-screen w-full flex items-center py-20 gap-10 flex-col">
 			<div className="bg-smoke-brown w-full flex flex-col items-center justify-center text-soft-gray p-20">
-				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase">
+				<h1 className="min-[933px]:text-7xl text-4xl font-bold uppercase text-center">
 					Our Education Programs
 				</h1>
 				<p className="w-1/2 text-center">
@@ -52,20 +37,21 @@ const EducationPrograms = () => {
 				</p>
 			</div>
 			<div className="flex md:flex-col flex-row justify-center items-center gap-5 px-2">
-				<div className="">
-					<ul className="w-full flex md:flex-row flex-col items-center justify-between bg-smoke-brown text-white rounded-xl">
+				<div className="w-full">
+					<ul className="w-full flex md:flex-row flex-col items-center justify-between bg-smoke-yellow text-white rounded-xl">
 						{tabContent.map((tab, index) => {
 							return (
 								<li
 									className={`
                                     cursor-pointer
-                                    w-full text-right
-                                    md:py-3 py-2 md:px-6 px-4
+                                    w-full md:text-center text-right
+                                    md:py-2 py-3 md:px-4 px-6
                                     rounded-xl
+									hover:bg-smoke-brown hover:text-light-yellow
                                     ${
 										activeTab === index
-											? "text-smoke-brown bg-smoke-yellow"
-											: ""
+											? "text-light-yellow bg-smoke-brown font-bold"
+											: "text-smoke-brown"
 									}
                                 `}
 									key={index}

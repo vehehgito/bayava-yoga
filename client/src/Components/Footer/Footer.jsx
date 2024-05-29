@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../public/DAYA-logo.svg"
+import logo from "/DAYA-logo.svg";
 
 function Footer() {
 	// Find year
 	const year = new Date().getFullYear();
 
 	return (
-		<div className="bg-smoke-brown text-smoke-yellow mt-16 flex flex-col justify-between items-center w-full h-full bg-gray-400 md:rounded-tl-full rounded-t-3xl shadow-lg py-10 text-gray-50 gap-7 md:text-left text-center">
-			<div className="flex md:flex-row flex-col justify-between items-center w-full md:pl-48 px-10 gap-5">
-				<div className="flex flex-col gap-5">
+		<div className="bg-smoke-brown text-smoke-yellow mt-16 flex flex-col justify-between items-center w-full h-full bg-gray-400 md:rounded-tl-[14rem] rounded-t-3xl shadow-lg py-10 text-gray-50 gap-7 md:text-left text-center">
+			<div className="grid md:grid-cols-4 grid-cols-1 w-full md:pl-48 px-10 gap-5">
+				<div className="flex flex-col items-center gap-5">
 					<img src={logo} />
-					<p className="md:w-[10rem] w-full">
+					<p className="md:w-[10rem] w-full text-center text-smoke-yellow prose prose-sm">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					</p>
 				</div>
@@ -59,8 +59,11 @@ function Footer() {
 						<div className="md:w-20 w-full h-0.5 bg-gray-950 rounded"></div>
 					</div>
 					<ul className="flex flex-col gap-3 justify-center">
-						<li className="flex items-center justify-center gap-3">
-							<Link className="footer-social-button" to="/">
+						<li className="flex items-center gap-3">
+							<Link
+								className="flex items-center gap-4"
+								to="/"
+							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									width="25"
@@ -70,10 +73,16 @@ function Footer() {
 								>
 									<path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"></path>
 								</svg>
+                <span className="text-2xl font-bold">
+									Twitter
+								</span>
 							</Link>
 						</li>
-						<li className="flex items-center justify-center gap-3">
-							<Link className="footer-social-button" to="/">
+						<li className="flex items-center gap-3">
+							<Link
+								className="flex items-center gap-4"
+								to="/"
+							>
 								<svg
 									width="25"
 									height="25"
@@ -88,10 +97,16 @@ function Footer() {
 										fill="currentColor"
 									></path>
 								</svg>
+                <span className="text-2xl font-bold">
+									Instagram
+								</span>
 							</Link>
 						</li>
-						<li className="flex items-center justify-center gap-3">
-							<Link className="footer-social-button" to="/">
+						<li className="flex items-center gap-3">
+							<Link
+								className="flex items-center gap-4"
+								to="/"
+							>
 								<svg
 									width="25"
 									height="25"
@@ -106,14 +121,17 @@ function Footer() {
 										clipRule="evenodd"
 									></path>
 								</svg>
+                <span className="text-2xl font-bold">
+									LinkedIn
+								</span>
 							</Link>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div className="w-full flex items-center justify-center flex-col gap-10">
+			<div className="w-full flex items-center flex-col gap-10">
 				<div className="w-3/4 h-0.5 bg-gray-950 rounded"></div>
-				<div>&copy; {year} Bayava. All rights reserved.</div>
+				<div>&copy; {year} DAYA. All rights reserved.</div>
 			</div>
 		</div>
 	);
